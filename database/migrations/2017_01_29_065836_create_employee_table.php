@@ -41,7 +41,14 @@ class CreateEmployeeTable extends Migration
             $table->string('relationship')->nullable();
             $table->string('emergency_phone_number')->nullable();
             $table->string('emergency_contact_address')->nullable();
-            $table->string('attachment')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('linkedin')->nullable();
+            $table->string('github')->nullable();
+            $table->string('profile_picture')->nullable();
+            $table->string('docs_attachment_1')->nullable();
+            $table->string('docs_attachment_2')->nullable();
+            $table->string('docs_attachment_3')->nullable();
             $table->text('note')->nullable();
             $table->timestamps();
         });
