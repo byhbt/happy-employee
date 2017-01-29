@@ -1,6 +1,6 @@
 Happy Employee ^^!
 ===================
-*Demo*: (https://happy-employee.herokuapp.com/)[https://happy-employee.herokuapp.com/]
+*Demo*: https://happy-employee.herokuapp.com
 
 ##1. Business
 **Problem**
