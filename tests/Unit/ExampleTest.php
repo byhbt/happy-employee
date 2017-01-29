@@ -1,18 +1,17 @@
 <?php
-
-use Illuminate\Foundation\Testing\WithoutMiddleware;
+namespace Tests\Unit;
+use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-
 class ExampleTest extends TestCase
 {
     /**
-     * A basic functional test example.
+     * A basic test example.
      *
      * @return void
      */
-    public function testBasicExample()
+    public function testBasicTest()
     {
-        $this->visit('/')->see('Happy Employee');
+        $this->assertTrue(true);
     }
 }
