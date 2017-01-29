@@ -48,6 +48,21 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employee <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="{{ url('/employee') }}">Import</a></li>
+                          <li><a href="#">List</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calendar <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="{{ url('/calendar') }}">Birthday</a></li>
+                          <li><a href="#">Leaves</a></li>
+                        </ul>
+                      </li>
+                    <li><a href="{{ url('/calendar') }}">Leave Request</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
