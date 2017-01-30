@@ -47,8 +47,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employee <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{ url('/employee') }}">Import</a></li>
-                            <li><a href="#">List</a></li>
+                            <li><a href="{{ url('employee') }}">List</a></li>
+                            <li><a href="{{ url('employee/import') }}">Import</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">

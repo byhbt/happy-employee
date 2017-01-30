@@ -15,4 +15,14 @@ class EmployeeController extends Controller
     {
         return view('employee.index');
     }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function import()
+    {
+        return view('employee.import');
+    }
 }
