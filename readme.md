@@ -47,3 +47,7 @@ php artisan db:seed
 ```
 
 ##4. How to contribute:
+
+## License
+
+The Happy Employee Application is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
