@@ -5,8 +5,9 @@ Route::auth();
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('home', ['as' => 'employee.home', 'uses' => 'HomeController@index']);
 
-Route::get('/home', 'HomeController@index');
-
-// Because of upgrading from laravel 5.2 to 5.3
-Route::get('/logout', 'Auth\LoginController@logout');
+Route::get('list', ['as' => 'employee.list', 'uses' => 'EmployeeController@index']);
+Route::get('import', ['as' => 'employee.import', 'uses' => 'EmployeeController@import']);
+Route::get('leave', ['as' => 'employee.leave', 'uses' => 'EmployeeController@leave']);
+Route::get('calendar', ['as' => 'calendar.calendar', 'uses' => 'CalendarController@index']);
