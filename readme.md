@@ -36,7 +36,7 @@ Build a software to help them do the tasks which relate to manage employees fast
 
 ##4. How to install:
 
-I used Laravel Valet (https://laravel.com/docs/5.4/valet)[https://laravel.com/docs/5.4/valet] for development.
+I used Laravel Valet [https://laravel.com/docs/5.4/valet](https://laravel.com/docs/5.4/valet) for development.
 
 ```
 php artisan migrate
