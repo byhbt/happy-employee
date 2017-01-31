@@ -130,4 +130,10 @@ storage/*.key
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
 
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
 # End of https://www.gitignore.io/api/phpstorm,macos,phpstorm,laravel

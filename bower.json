@@ -1,0 +1,13 @@
+{
+  "name": "Happy Employee",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Huynh Ba Thanh <huynhbathanh@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/byhbt/happy-employee",
+  "dependencies": {
+    "gentelella": "^1.4.0"
+  }
+}
