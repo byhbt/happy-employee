@@ -49,7 +49,7 @@
         <!-- /top navigation -->
         <!-- page content -->
         <div class="right_col" role="main">
-            @include('dashboard.index')
+            @yield('content')
         </div>
         <!-- /page content -->
         <!-- footer content -->

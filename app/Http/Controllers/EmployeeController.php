@@ -2,27 +2,44 @@
 
 namespace App\Http\Controllers;
 
+use App\Employee;
 use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
     /**
-     * Show the application dashboard.
+     * Get list of employee
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return view('employee.index');
+        $employees = Employee::all();
+
+        $viewData = [
+            'employees' => $employees
+        ];
+
+        return view('employee.index', $viewData);
     }
 
     /**
-     * Show the application dashboard.
+     * Add new employee
      *
      * @return \Illuminate\Http\Response
      */
-    public function import()
+    public function add()
     {
-        return view('employee.import');
+        return view('employee.add');
+    }
+
+    /**
+     * Show general calendar
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function calendar()
+    {
+        return view('employee.calendar');
     }
 }
