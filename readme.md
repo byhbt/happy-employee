@@ -2,7 +2,7 @@ Happy Employee ^^!
 ===================
 *Demo*: [http://happy-employee.5amlabs.xyz](http://happy-employee.5amlabs.xyz)
 [![Build Status](https://travis-ci.org/byhbt/happy-employee.svg?branch=master)](https://travis-ci.org/byhbt/happy-employee)
-[![Style Status](https://styleci.io/repos/60019519?style=plastic&branch=master)](https://styleci.io/repos/60019519)
+[![Style Status](https://styleci.io/repos/60019519?style=plastic&branch=master)](https://styleci.io/repos/60019519?style=plastic&branch=master)
 
 
 ##1. Business
