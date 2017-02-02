@@ -1,45 +1,40 @@
-Happy Employee ^^!
+Happy Employee
 ===================
 *Demo*: [http://happy-employee.5amlabs.xyz](http://happy-employee.5amlabs.xyz)
-[![Build Status](https://travis-ci.org/byhbt/happy-employee.svg?branch=master)](https://travis-ci.org/byhbt/happy-employee)
-[![Style Status](https://styleci.io/repos/60019519?style=plastic&branch=master)](https://styleci.io/repos/60019519?style=plastic&branch=master)
 
+[![Build Status](https://travis-ci.org/byhbt/happy-employee.svg?branch=master)](https://travis-ci.org/byhbt/happy-employee)
 
 ##1. Business
 **Problem**
-HR have to manage list of employees on in the old ways(Excel, note,...)
-
-**Solution**
-Build a software to help them do the tasks which relate to manage employees faster.
+HR have to manage list of employees on in the old ways(Excel, note,...), so this software will help them automate 
+their task and make employee happier.
 
 **Target users**
- 1. Manager
  2. HR
  3. Employee
 
 ##2. Features:
 **Employee management**
- - Manage employees.
+ - Manage employee information.
 
 **Leave planning**
- - Leave plan for employee
-
-**Goals settings**
- - Set personal goal
- - Reminder
- - Cheer
+ - Leave plan for employee.
 
 ##3. Implemetation:
 ### Business Object:
- - Organization
- - Department
- - Manager
- - HR
- - User
+ - Employee
+ - Admin(user)
 
 ##4. How to install:
-
 I used Laravel Valet [https://laravel.com/docs/5.4/valet](https://laravel.com/docs/5.4/valet) for development.
+
+```
+npm install
+```
+
+```
+bower install
+```
 
 ```
 php artisan migrate
@@ -50,7 +45,7 @@ php artisan db:seed
 ```
 
 ##5. How to contribute:
+(updating)
 
 ##6. License
-
 The Happy Employee Application is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
