@@ -23,43 +23,22 @@
                     <a href="#" class="site_title"><i class="fa fa-paw"></i> <span>Happy Employee</span></a>
                 </div>
                 <div class="clearfix"></div>
-                <!-- /menu profile quick info -->
                 <br />
                 @include('layouts.sidebar')
-                <!-- /menu footer buttons -->
                 <div class="sidebar-footer hidden-small">
-                    <a data-toggle="tooltip" data-placement="top" title="Settings">
-                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                    </a>
-                    <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-                    </a>
-                    <a data-toggle="tooltip" data-placement="top" title="Lock">
-                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-                    </a>
-                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
-                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-                    </a>
+                    @include('layouts.sidebar-footer')
                 </div>
-                <!-- /menu footer buttons -->
             </div>
         </div>
-        <!-- top navigation -->
-        @include('layouts.top-nav')
-        <!-- /top navigation -->
-        <!-- page content -->
         <div class="right_col" role="main">
             @yield('content')
         </div>
-        <!-- /page content -->
-        <!-- footer content -->
         <footer>
             <div class="pull-right">
                 Happy Employee
             </div>
             <div class="clearfix"></div>
         </footer>
-        <!-- /footer content -->
     </div>
 </div>
 <!-- Scripts -->
