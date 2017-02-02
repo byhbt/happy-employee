@@ -30,6 +30,7 @@
                 </div>
             </div>
         </div>
+        @include('layouts.nav-header')
         <div class="right_col" role="main">
             @yield('content')
         </div>
