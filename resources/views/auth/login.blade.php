@@ -17,7 +17,7 @@
             <section class="login_content">
                 <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
                     {{ csrf_field() }}
-                    <h1>Login Form</h1>
+                    <h1>Login</h1>
                     <div>
                         <input id="email" type="email" class="form-control" name="email"  placeholder="Email" required="" value="{{ old('email') }}">
                     </div>
