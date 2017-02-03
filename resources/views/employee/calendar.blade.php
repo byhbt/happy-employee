@@ -4,7 +4,7 @@
     <div class="">
         <div class="page-title">
             <div class="title_left">
-                <h3>Add new employee</h3>
+                <h3>Birthday</h3>
             </div>
         </div>
         <div class="clearfix"></div>
