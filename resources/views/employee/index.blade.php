@@ -45,7 +45,11 @@
                                         <td class="">{{ $employee->mobile_phone }}</td>
                                         <td class="">{{ $employee->tax_code_number }}</td>
                                         <td class="a-right a-right">{{ $employee->gender }}</td>
-                                        <td class="last"><a href="#">View</a>
+                                        <td class="last">
+                                            <a href="#" class="btn btn-primary">View</a>
+                                            <a href="/employee/edit/{{ $employee->id }}" class="btn btn-primary">Edit</a>
+                                            <a href="#" class="btn btn-primary">History</a>
+                                            <a href="#" class="btn btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                 @empty

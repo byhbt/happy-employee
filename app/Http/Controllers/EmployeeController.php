@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Employee;
+use App\Http\Requests\AddEmployee;
 use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
@@ -42,6 +43,28 @@ class EmployeeController extends Controller
     {
         return view('employee.add');
     }
+
+    /**
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function store(AddEmployee $request)
+    {
+        dd($request->all());
+        
+        Employee::created();
+
+        return redirect()->back();
+    }
+    /**
+     * Add new employee
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function edit()
+    {
+        return view('employee.edit');
+    }
+
 
     /**
      * Show general calendar
