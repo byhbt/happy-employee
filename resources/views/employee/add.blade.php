@@ -50,11 +50,12 @@
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     {{--<input id="date_of_birth" name="date_of_birth"--}}
-                                           {{--class="date-picker form-control col-md-7 col-xs-12" required="required"--}}
+                                    {{--class="date-picker form-control col-md-7 col-xs-12" required="required"--}}
                                     {{--type="text">--}}
                                     {{--<input type="text" name="date_of_birth" class="form-control has-feedback-left" id="date_of_birth"--}}
-                                           {{--placeholder="">--}}
-                                    <input type="text" name="date_of_birth" class="form-control" data-inputmask="'mask': '99/99/9999'">
+                                    {{--placeholder="">--}}
+                                    <input type="text" id="date_of_birth" name="date_of_birth" class="form-control"
+                                           data-inputmask="'mask': '99/99/9999'" placeholder="dd/mm/yyyy">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -150,9 +151,9 @@
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="id_date_of_issue">Date of
                                     issue <span class="required">*</span>
                                 </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12 daterangepicker">
-                                    <input type="text" id="id_date_of_issue" name="id_date_of_issue" required="required"
-                                           class="form-control col-md-7 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="id_date_of_issue" name="id_date_of_issue" class="form-control"
+                                           data-inputmask="'mask': '99/99/9999'" placeholder="dd/mm/yyyy">
                                 </div>
                             </div>
                             <div class="form-group">
