@@ -11,6 +11,15 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
+                        @if (count($errors) > 0)
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <br>
                         <form id="demo-form2" method="post" action="/employee/add" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
                             {{ csrf_field() }}
@@ -29,6 +38,20 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input id="date_of_birth" name="date_of_birth" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Place Of Birth <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input id="place_of_birth" name="place_of_birth" class="form-control col-md-7 col-xs-12" required="required" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <div id="gender" class="btn-group" data-toggle="buttons">
@@ -42,10 +65,45 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth <span class="required">*</span>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Nationality <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="date_of_birth" name="date_of_birth" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                    <input id="nationality" name="nationality" class="form-control col-md-7 col-xs-12" required="required" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Education <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input id="education" name="education" class="form-control col-md-7 col-xs-12" required="required" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Resident address <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input id="resident_address" name="resident_address" class="form-control col-md-7 col-xs-12" required="required" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Contact address <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input id="contact_address" name="contact_address" class="form-control col-md-7 col-xs-12" required="required" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Email address <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input id="email_address" name="email_address" class="form-control col-md-7 col-xs-12" required="required" type="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Mobile phone <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input id="mobile_phone" name="mobile_phone" class="form-control col-md-7 col-xs-12" required="required" type="email">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -70,14 +128,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="tax_code">Tax code <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="tax_code" name="tax_code" class="form-control col-md-7 col-xs-12">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="gender">Marital status<span class="required">*</span>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="marital_status">Marital status<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <div id="marital-status" class="btn-group" data-toggle="buttons">
@@ -88,6 +139,13 @@
                                             <input type="radio" name="marital_status" value="marriage" data-parsley-multiple="gender"> Marriage
                                         </label>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="tax_code">Tax code <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="tax_code" name="tax_code" class="form-control col-md-7 col-xs-12">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -154,10 +212,10 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Emergency number<span class="required">*</span>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="contact_emergency_number">Emergency number<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="last-name" name="last-name" class="form-control col-md-7 col-xs-12">
+                                    <input type="text" id="contact_emergency_number" name="contact_emergency_number" class="form-control col-md-7 col-xs-12">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -185,7 +243,7 @@
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Linkedin
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="last-name" name="last-name" class="form-control col-md-7 col-xs-12">
+                                    <input type="text" id="linkedin_account" name="linkedin_account" class="form-control col-md-7 col-xs-12">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -206,7 +264,14 @@
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="certificate_file">Certificates
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="certificate_file" name="certificate_file" class="form-control col-md-7 col-xs-12">
+                                    <input type="file" id="certificate_file" name="certificate_file" class="form-control col-md-7 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="note">Note
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="note" name="note" class="form-control col-md-7 col-xs-12">
                                 </div>
                             </div>
                             <div class="ln_solid"></div>

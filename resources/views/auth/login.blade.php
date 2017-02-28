@@ -15,6 +15,15 @@
     <div class="login_wrapper">
         <div class="animate form login_form">
             <section class="login_content">
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                 <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
                     {{ csrf_field() }}
                     <h1>Login</h1>

@@ -32,7 +32,7 @@ $factory->define(App\Employee::class, function (Faker\Generator $faker) {
         'id_number' => $faker->randomNumber,
         'date_of_issue' => $faker->date,
         'place_of_issue' => $faker->state,
-        'marial_status' => $faker->randomElement(['s', 'm', 'u']),
+        'marital_status' => $faker->randomElement(['s', 'm', 'u']),
         'tax_code_number' => $faker->randomNumber,
     ];
 });

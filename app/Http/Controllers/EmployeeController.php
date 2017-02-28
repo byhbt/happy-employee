@@ -49,9 +49,9 @@ class EmployeeController extends Controller
      */
     public function store(AddEmployee $request)
     {
-        dd($request->all());
-        
-        Employee::created();
+        $postData = $request->except('_token');
+
+        Employee::createEmployee($postData);
 
         return redirect()->back();
     }
@@ -62,6 +62,7 @@ class EmployeeController extends Controller
      */
     public function edit()
     {
+
         return view('employee.edit');
     }
 

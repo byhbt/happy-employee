@@ -28,7 +28,7 @@ class CreateEmployeeTable extends Migration
             $table->string('id_number');
             $table->date('date_of_issue');
             $table->string('place_of_issue');
-            $table->char('marial_status', 2); // single - marriage
+            $table->char('marital_status', 2); // single - marriage
             $table->string('tax_code_number')->nullable();
             $table->string('number_of_dependant')->nullable(); // Vietnamese Laws
             $table->string('social_insurance_book_number')->nullable();
