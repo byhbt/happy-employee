@@ -20,6 +20,4 @@
 // });
 
 $(document).ready(function() {
-    $('#calendar').fullCalendar();
-    console.log("Hello the world");
 });
