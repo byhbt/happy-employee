@@ -51,11 +51,6 @@
                                             class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    {{--<input id="date_of_birth" name="date_of_birth"--}}
-                                    {{--class="date-picker form-control col-md-7 col-xs-12" required="required"--}}
-                                    {{--type="text">--}}
-                                    {{--<input type="text" name="date_of_birth" class="form-control has-feedback-left" id="date_of_birth"--}}
-                                    {{--placeholder="">--}}
                                     <input type="text" id="date_of_birth" name="date_of_birth" class="form-control"
                                            value="{{ old('date_of_birth') }}"
                                            data-inputmask="'mask': '99/99/9999'" placeholder="dd/mm/yyyy">
@@ -74,8 +69,8 @@
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="radio" class="flat" name="gender" id="genderM" value="male" />
-                                    <input type="radio" class="flat" name="gender" id="genderF" value="female" checked="" required />
+                                    <input type="radio" name="gender" id="genderM" value="male" /> Male
+                                    <input type="radio" name="gender" id="genderF" value="female" checked="" required /> Female
                                 </div>
                             </div>
                             <div class="form-group">
@@ -174,8 +169,9 @@
                                     status<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="radio" class="flat" name="marital_status" id="maritalS" value="single" />
-                                    <input type="radio" class="flat" name="marital_status" id="maritalM" value="marriage" checked="" required />
+                                    <input type="radio" name="marital_status" id="maritalS" value="single" /> Single
+                                    <input type="radio" name="marital_status" id="maritalM" value="marriage" checked="" required />
+                                    Marriage
                                 </div>
                             </div>
                             <div class="form-group">

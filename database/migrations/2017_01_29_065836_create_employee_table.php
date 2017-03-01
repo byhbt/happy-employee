@@ -16,19 +16,19 @@ class CreateEmployeeTable extends Migration
             $table->increments('id');
             $table->string('first_name');
             $table->string('last_name');
-            $table->date('date_of_birth');
-            $table->string('place_of_birth');
+            $table->date('date_of_birth')->nullable();
+            $table->string('place_of_birth')->nullable();
             $table->char('gender', 2)->nullable();
-            $table->string('nationality');
-            $table->string('education');  // k12 - Bachelor - Master - Phd - None
-            $table->string('resident_address');
-            $table->string('contact_address');
-            $table->string('email_address');
-            $table->string('mobile_phone');
-            $table->string('id_number');
-            $table->date('date_of_issue');
-            $table->string('place_of_issue');
-            $table->char('marital_status', 2); // single - marriage
+            $table->string('nationality')->nullable();
+            $table->string('education')->nullable();  // k12 - Bachelor - Master - Phd - None
+            $table->string('resident_address')->nullable();
+            $table->string('contact_address')->nullable();
+            $table->string('email_address')->nullable();
+            $table->string('mobile_phone')->nullable();
+            $table->string('id_number')->nullable();
+            $table->date('date_of_issue')->nullable();
+            $table->string('place_of_issue')->nullable();
+            $table->char('marital_status', 2)->nullable(); // single - marriage
             $table->string('tax_code_number')->nullable();
             $table->string('number_of_dependant')->nullable(); // Vietnamese Laws
             $table->string('social_insurance_book_number')->nullable();
