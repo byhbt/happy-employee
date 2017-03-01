@@ -4,14 +4,16 @@ Happy Employee
 
 [![Build Status](https://travis-ci.org/byhbt/happy-employee.svg?branch=master)](https://travis-ci.org/byhbt/happy-employee)
 
+![alt tag](http://i.imgur.com/ce1ozph.png)
+
 ##1. Business
 **Problem**
 HR have to manage list of employees on in the old ways(Excel, note,...), so this software will help them automate 
 their task and make employee happier.
 
 **Target users**
- 2. HR
- 3. Employee
+ 1. HR
+ 2. Employee
 
 ##2. Features:
 **Employee management**
