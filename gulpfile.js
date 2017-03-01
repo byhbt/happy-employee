@@ -6,17 +6,17 @@ elixir(function (mix) {
     mix.combine([
         'bower_components/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css',
         'bower_components/gentelella/vendors/font-awesome/css/font-awesome.min.css',
-        'bower_components/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.css',
-        'bower_components/gentelella/build/css/custom.min.css'
+        'bower_components/gentelella/build/css/custom.css'
     ], 'public/css/all.css');
 
     mix.combine([
         'bower_components/gentelella/vendors/jquery/dist/jquery.min.js',
         'bower_components/gentelella/vendors/bootstrap/dist/js/bootstrap.min.js',
+        'bower_components/gentelella/vendors/iCheck/icheck.min.js',
         'bower_components/gentelella/vendors/moment/min/moment.min.js',
         'bower_components/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.js',
         'bower_components/gentelella/vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js',
-        'bower_components/gentelella/build/js/custom.min.js',
+        'resources/assets/js/gentelella.js',
         'resources/assets/js/app.js'
     ], 'public/js/all.js');
 });
