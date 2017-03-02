@@ -1,6 +1,10 @@
 Happy Employee
 ===================
-*Demo*: [http://happy-employee.5amlabs.xyz](http://happy-employee.5amlabs.xyz)
+
+### Demo:
+*Demo*: [http://happy-employee.5amlabs.xyz](http://happy-employee.5amlabs.xyz)  
+Email: admin@he.com  
+Password: testtest
 
 [![Build Status](https://travis-ci.org/byhbt/happy-employee.svg?branch=master)](https://travis-ci.org/byhbt/happy-employee)
 
