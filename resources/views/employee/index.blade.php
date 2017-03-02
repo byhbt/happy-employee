@@ -25,6 +25,7 @@
                                     <th class="column-title">Email </th>
                                     <th class="column-title">Phone </th>
                                     <th class="column-title">Gender </th>
+                                    <th class="column-title">Created at </th>
                                     <th class="column-title no-link last"><span class="nobr">Action</span>
                                     </th>
                                     <th class="bulk-actions" colspan="7">
@@ -45,6 +46,7 @@
                                         <td class="">{{ $employee->mobile_phone }}</td>
                                         <td class="">{{ $employee->tax_code_number }}</td>
                                         <td class="a-right a-right">{{ $employee->gender }}</td>
+                                        <td class="">{{ $employee->created_at->diffForHumans() }}</td>
                                         <td class="last">
                                             <a href="#" class="btn btn-primary">View</a>
                                             <a href="/employee/edit/{{ $employee->id }}" class="btn btn-primary">Edit</a>

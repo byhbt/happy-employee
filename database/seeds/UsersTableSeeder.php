@@ -13,7 +13,7 @@ class UsersTableSeeder extends Seeder
     {
         factory(App\User::class, 2)->create();
 
-        // Add test admin account
+        // Add demo account
         factory(App\User::class)->create([
             'email' => 'admin@he.com',
             'password' => bcrypt('testtest'),

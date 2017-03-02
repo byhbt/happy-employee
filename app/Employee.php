@@ -13,10 +13,15 @@ class Employee extends Model
     protected $guarded = ['id'];
 
     /**
-     * create new employee
+     * Create new employee
+     * @param array $data
+     *
+     * @return
      */
     public static function createEmployee(array $data)
     {
+        $profileImagePath = $data['profile_picture']->store('images');
+
         $result = self::create([
             'first_name'                   => $data['first_name'],
             'last_name'                    => $data['last_name'],
@@ -49,7 +54,7 @@ class Employee extends Model
             'twitter'                      => $data['twitter_account'],
             'linkedin'                     => $data['linkedin_account'],
             'github'                       => $data['github_account'],
-            'profile_picture'              => $data['profile_picture'],
+            'profile_picture'              => $profileImagePath,
             'docs_attachment_1'            => $data['certificate_file'],
             'note'                         => $data['note'],
         ]);
