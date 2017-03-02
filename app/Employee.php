@@ -3,9 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Employee extends Model
 {
+    use SoftDeletes;
 
     /**
      * @var array
@@ -55,7 +57,6 @@ class Employee extends Model
             'linkedin'                     => $data['linkedin_account'],
             'github'                       => $data['github_account'],
             'profile_picture'              => $profileImagePath,
-            'docs_attachment_1'            => $data['certificate_file'],
             'note'                         => $data['note'],
         ]);
 

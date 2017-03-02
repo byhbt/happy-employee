@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="">
-    </div>
+    @include('dashboard._stats')
 @endsection

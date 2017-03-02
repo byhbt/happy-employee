@@ -46,10 +46,8 @@ class CreateEmployeeTable extends Migration
             $table->string('linkedin')->nullable();
             $table->string('github')->nullable();
             $table->string('profile_picture')->nullable();
-            $table->string('docs_attachment_1')->nullable();
-            $table->string('docs_attachment_2')->nullable();
-            $table->string('docs_attachment_3')->nullable();
             $table->text('note')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
