@@ -20,7 +20,7 @@ class Employee extends Model
      */
     public static function createEmployee(array $data)
     {
-        $profileImagePath = $data['profile_picture']->store('images');
+        $profileImagePath = $data['certificate_file']->store('images');
 
         $result = self::create([
             'first_name'                   => $data['first_name'],

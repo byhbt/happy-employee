@@ -23,7 +23,7 @@
                             </div>
                         @endif
                         <br>
-                        <form id="demo-form2" method="post" action="/employee/add" data-parsley-validate=""
+                        <form id="demo-form2" method="post" action="/employee/add" data-parsley-validate="" enctype="multipart/form-data"
                               class="form-horizontal form-label-left" novalidate="">
                             {{ csrf_field() }}
                             <div class="form-group">
