@@ -25,7 +25,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        $employees = Employee::orderBy('created_at', 'DESC')->get();
+        $employees = Employee::orderBy('created_at', 'DESC')->paginate(15);
 
         $viewData = [
             'employees' => $employees
@@ -46,6 +46,7 @@ class EmployeeController extends Controller
 
     /**
      * @param \App\Http\Requests\AddEmployee $request
+     *
      * @return \Illuminate\Http\RedirectResponse
      */
     public function store(AddEmployee $request)
@@ -56,6 +57,7 @@ class EmployeeController extends Controller
 
         return redirect()->back();
     }
+
     /**
      * Add new employee
      *
