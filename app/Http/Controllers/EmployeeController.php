@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Employee;
 use App\Http\Requests\AddEmployee;
-use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
@@ -63,10 +62,15 @@ class EmployeeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function edit()
+    public function edit(int $employeeId)
     {
+        $employee = Employee::find($employeeId);
 
-        return view('employee.edit');
+        $viewData = [
+            'employee' => $employee
+        ];
+
+        return view('employee.edit', $viewData);
     }
 
 

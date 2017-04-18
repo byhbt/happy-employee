@@ -34,6 +34,13 @@ their task and make employee happier.
 ##4. How to install:
 I used Laravel Valet [https://laravel.com/docs/5.4/valet](https://laravel.com/docs/5.4/valet) for development.
 
+Create application database config in .env file.
+
+```
+cp .env.example .env
+```
+
+Install for development
 ```
 npm install
 ```
@@ -50,8 +57,11 @@ php artisan migrate
 php artisan db:seed
 ```
 
-##5. How to contribute:
+##5. How to deploy:
 (updating)
 
-##6. License
+##6. How to contribute:
+(updating)
+
+##7. License
 The Happy Employee Application is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
